@@ -1,0 +1,41 @@
+
+## MIKROTIK VULNS
+
+# CVE-2018-14847
+# CVE-2019-3943
+tshark -r $file -Y "tcp contains \"/////./..//////./..//////./../\"  or tcp contains  \"./.././.././../\" or tcp contains  \"././../\"" -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=, 
+
+# CVE SMB # (CVE-2018-7445)
+# https://blog.radware.com/security/2018/03/mikrotik-routeros-based-botnet/
+# https://github.com/BigNerd95/Chimay-Blue/blob/master/StackHeap_mips.py
+tshark -r $file  -Y "frame contains \"808182808080818082808981818880\" or frame contains \"24020fab\" " -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=, > $fileuri
+
+
+# CVE-2018_1156 
+# https://www.tenable.com/security/research/tra-2018-21
+tshark -r $file  -Y "tcp contains \"softid\" and tcp contains \"pass\" and tcp.port==80 and http.request.method == \"GET\"" -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=,
+
+# CVE-2018_1157.csv
+# https://www.tenable.com/security/research/tra-2018-21
+tshark -r $file  -Y "http.request.method == \"POST\" and http.request.uri contains \"/jsproxy/upload\"   " -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=, 
+
+
+# CVE-2018_1159
+# https://www.tenable.com/security/research/tra-2018-21
+tshark -r $file  -Y "tcp contains \"/nova/bin/www\" and tcp.port==80" -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=, > $fileuri
+
+# CVE-2019_3924
+# https://www.tenable.com/security/research/tra-2019-07
+tshark -r $file  -Y "frame contains \"9e01009c4d320500ff010300000842fc7b5a04\" and  tcp.port==8291"  -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=, 
+
+
+## Search for tunnels 
+
+## PPTP
+tshark -r $file  -Y  "pptp  and ip.src == 10.0.0.0/8 and tcp.len>0"  -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=,  
+
+## SSTP
+tshark -r $file  -Y  "sstp and ip.src == 10.0.0.0/8 and tcp.len>0"  -T fields -e ip.src -e tcp.srcport -e ip.dst -e tcp.dstport  -E separator=,  
+ 
+
+
