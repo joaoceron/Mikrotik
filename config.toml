@@ -10,9 +10,9 @@ publishDir = "docs"
 [params]
     # project specific params
     description = "Results from Mikrotik honeypots deployed for more than 45 days in 6 distinct countries."
-    author_url = "//cdeck3r.com"
-    author_name = "cdeck3r"
-    project_url = "//github.com/cdeck3r/OneDly-Theme"
+    author_url = "//"
+    author_name = "Mikrotik"
+    project_url = "//github.com/joaoceron/mikrotik"
 
     # optionally specify where the content is
     mainSections = ["post"] 
