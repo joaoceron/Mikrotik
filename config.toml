@@ -9,25 +9,25 @@ publishDir = "docs"
 #
 [params]
     # project specific params
-    description = "One-Day-Only (OneDly) project documentation."
+    description = "Results from Mikrotik honeypots deployed for more than 45 days in 6 distinct countries."
     author_url = "//cdeck3r.com"
     author_name = "cdeck3r"
     project_url = "//github.com/cdeck3r/OneDly-Theme"
 
     # optionally specify where the content is
-    # mainSections = ["post"] 
+    mainSections = ["post"] 
 
     # social share links to appear at the end
-    socialShare          = true
+    socialShare          = false
     # Sets specific share to appear on posts (default behavior is to appear)
-    socialShareTwitter   = true
-    socialShareGoogleplus = true
-    socialShareFacebook  = true
-    socialShareReddit    = true
-    socialShareLinkedin  = true
-    socialShareStumbleupon = true
-    socialSharePinterest = true
-    socialShareEmail = true
+    socialShareTwitter   = false
+    socialShareGoogleplus = false
+    socialShareFacebook  = false
+    socialShareReddit    = false
+    socialShareLinkedin  = false
+    socialShareStumbleupon = false
+    socialSharePinterest = false
+    socialShareEmail = false
 
     # theme's color scheme
     first_color="#f8f8f8"
@@ -49,7 +49,7 @@ publishDir = "docs"
 #
 [social]
     # Coding Communities
-    github           = "cdeck3r/OneDly-Theme"
+    github           = ""
     gitlab           = ""
     stackoverflow    = "" # User Number
     bitbucket        = ""
@@ -74,7 +74,7 @@ publishDir = "docs"
     googleplus       = ""
     reddit           = ""
     quora            = ""
-    youtube          = "channel/UCZ5wNVV_E6AA3L3C-mvqwSA"
+    youtube          = ""
     vimeo            = ""
     whatsapp         = "" # WhatsApp Number
     # WeChat and QQ need testing.
@@ -82,7 +82,7 @@ publishDir = "docs"
     qq             = "" # User ID Number
     instagram        = ""
     tumblr           = ""
-    twitter          = "cdeck3r"
+    twitter          = ""
     skype            = ""
     snapchat         = ""
     pinterest        = ""
@@ -92,7 +92,7 @@ publishDir = "docs"
     orcid            = ""
     researchgate     = ""
     # Email
-    email = "info@cdeck3r.com"
+    email = ""
 
 #
 # Adjust privacy settings
