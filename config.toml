@@ -2,6 +2,7 @@ baseurl = "https://mikrotik-exposed.org/"
 languageCode = "en-us"
 title = "Mikrotik Exposed"
 theme = "onedly"
+publishDir = "docs"
 
 #
 # Personalization params
