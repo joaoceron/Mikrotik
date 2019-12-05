@@ -17,7 +17,17 @@
       <pubDate>Tue, 03 Dec 2019 14:06:52 +0100</pubDate>
       
       <guid>https://mikrotik-exposed.org/post/about/</guid>
-      <description>  Steve Francia     Steve Francia   </description>
+      <description>  honeypot     honeypot   </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://mikrotik-exposed.org/post/intro/</link>
+      <pubDate>Tue, 03 Dec 2019 14:06:52 +0200</pubDate>
+      
+      <guid>https://mikrotik-exposed.org/post/intro/</guid>
+      <description>Project description
+  honeypot     honeypot   </description>
     </item>
     
   </channel>
