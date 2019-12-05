@@ -9,7 +9,7 @@ publishDir = "docs"
 #
 [params]
     # project specific params
-    description = "Results from Mikrotik honeypots deployed for more than 45 days in 6 distinct countries."
+    description = "The website presents results from our research targeting Mikrotik devices."
     author_url = "//"
     author_name = "Mikrotik"
     project_url = "//github.com/joaoceron/mikrotik"
