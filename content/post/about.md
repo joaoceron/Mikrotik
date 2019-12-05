@@ -5,3 +5,4 @@ draft: false
 ---
 
 {{< figure src="imgs/all-traffic.png" width="10%" height="10%" title="honeypot" >}}
+{{< figure src="imgs/all-traffic.png" width="50px" height="30px" title="honeypot" >}}
