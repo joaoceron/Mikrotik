@@ -15,7 +15,7 @@ publishDir = "docs"
     project_url = "//github.com/joaoceron/mikrotik"
 
     # optionally specify where the content is
-    mainSections = ["post"] 
+    #mainSections = ["post"] 
 
     # social share links to appear at the end
     socialShare          = false
@@ -49,17 +49,6 @@ publishDir = "docs"
 #
 [social]
     # Coding Communities
-    github           = ""
-    gitlab           = ""
-    stackoverflow    = "" # User Number
-    bitbucket        = ""
-    jsfiddle         = ""
-    codepen          = ""
-    # Visual Art Communities
-    deviantart       = ""
-    flickr           = ""
-    behance          = ""
-    dribbble         = ""
 
 #
 # Adjust privacy settings
