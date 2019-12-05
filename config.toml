@@ -10,7 +10,7 @@ publishDir = "docs"
 [params]
     # project specific params
     description = "The website presents results from our research targeting Mikrotik devices."
-    author_url = "//"
+    author_url = "//github.com/joaoceron/mikrotik"
     author_name = "Mikrotik"
     project_url = "//github.com/joaoceron/mikrotik"
 
