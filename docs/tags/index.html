@@ -21,7 +21,7 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
     
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
@@ -68,7 +68,7 @@ body {
 .header-container h4 {
   color: rgb(51, 51, 51);
 }
-
+ 
   </style>
 
 </head>
@@ -191,21 +191,38 @@ body {
 
             <div class="row">
                 <div>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">About</h2>
-                    <p><figure>
-    <img src="imgs/all-traffic.png" width="10%" height="10%"/> <figcaption>
-            <h4>honeypot</h4>
-        </figcaption>
-</figure>
-
-<figure>
-    <img src="imgs/all-traffic.png" width="50px" height="30px"/> <figcaption>
-            <h4>honeypot</h4>
-        </figcaption>
-</figure>
-</p>
+                    
+                    <h2 class="section-heading"></h2>
+                    <h2 id="background">Background:</h2>
+<p>MikroTik is a network equipment manufacturer know for its low-cost
+routers used to provide both last-mile access to home users and are
+used in core network infrastructure. Although they are also known for
+the security
+<a href="https://www.cvedetails.com/vendor/12508/Mikrotik.html">flaws</a> on
+their products.</p>
+<h2 id="project-goals">Project Goals</h2>
+<ul>
+<li>Characterize attacks to MikroTik devices (RouterOS);</li>
+<li>Automate Attack Classification based on CVE.</li>
+</ul>
+<h2 id="contributions">Contributions</h2>
+<ul>
+<li>We reveal the landscape of MikroTik devices worldwide. See our paper (to appear);</li>
+<li>We propose a realistic, easy deploy honeypot that mimics low-cost MikroTik routers;</li>
+<li>We propose an automated classification of the traffic collected at
+the honeypot and discuss ways for mitigating the collected attacks.</li>
+</ul>
+<blockquote>
+<p><strong>Our Honeypot</strong>: You can find our open source honeypot described
+in our <a href="https://github.com/cpbscholten/routeros_honeypot">repository</a>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Signatures</strong>:
+We have developed
+<a href="https://github.com/joaoceron/Mikrotik/blob/master/misc/signatures.txt">signatures</a>
+for the well-known vulnerabilities related to the MikroTik devices.
+They are compatible with the Berkeley Packet Filter.</p>
+</blockquote>
 
                 </div>
             </div>
@@ -223,17 +240,9 @@ body {
 
             <div class="row">
                 <div>
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Intro</h2>
-                    <p>Project description</p>
-<figure>
-    <img src="imgs/all-traffic.png" width="50px" height="30px"/> <figcaption>
-            <h4>honeypot</h4>
-        </figcaption>
-</figure>
-
-
+                    
+                    <h2 class="section-heading"></h2>
+                    
                 </div>
             </div>
 
@@ -246,22 +255,10 @@ body {
 </section>
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119473531-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-119473531-1');
-</script>
-
 <footer>
-
-
-
     <div class="container">
         <div class="row">
-            <div class="col-md-8" style="padding-left: 0px">
+            <div class="col-md-8" style="padding-left: 0px; width:100%">
 				<ul class="list-inline">
 					<li>
 						<a class="page-scroll" href="#intro">Up</a>
@@ -269,18 +266,23 @@ body {
 					
 					
 				 </ul>
+				 <p class="copyright text-muted small" style="text-align:left;">
+                    Copyright &copy; Mikrotik Exposed All Rights Reserved 
+                        </br>Built with <a href="http://gohugo.io">Hugo</a> and the <a href="https://github.com/cdeck3r/OneDly-Theme">OneDly project</a> theme.
+                 </p>
 			</div>
+            
         </div>
     </div>
 </footer>
 
-<script src="/js/jquery-1.11.0.js"></script>
+<script src="js/jquery-1.11.0.js"></script>
 
 
-<script src="/js/jquery.easing.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
 
 
-<script src="/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 
 
